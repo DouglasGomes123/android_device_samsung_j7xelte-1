@@ -15,26 +15,17 @@
 #
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/j7xelte/device.mk)
+$(call inherit-product, device/samsung/on7xelte/device.mk)
 
 # Inherit from those products. Most specific first
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
-# Gapps
-TARGET_GAPPS_ARCH := arm
-TARGET_DENSITY := xhdpi
-TARGET_BOOT_ANIMATION_RES := 720
-TARGET_MINIMAL_APPS := true
+# Inherit some common Havoc-OS stuff.
+$(call inherit-product, vendor/havoc/config/common.mk)
 
 # Device identifier
-PRODUCT_NAME := aosp_j7xelte
+PRODUCT_NAME := havoc_on7xelte
 BOARD_VENDOR := samsung
-PRODUCT_DEVICE := j7xelte
+PRODUCT_DEVICE := on7xelte
 PRODUCT_BRAND := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
-PRODUCT_BUILD_PROP_OVERRIDES += \
-        PRIVATE_BUILD_DESC="j7xeltexx-user 7.0 NRD90M J710FXXU4BRA1 release-keys"
-        BUILD_FINGERPRINT=Xiaomi/sagit/sagit:7.1.1/NMF26X/V8.2.17.0.NCACNEC:user/release-keys

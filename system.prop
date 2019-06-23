@@ -2,7 +2,7 @@
 ro.sf.disable_triple_buffer=0
 
 # DPI
-ro.sf.lcd_density=360
+ro.sf.lcd_density=380
 
 # Sdcardfs
 ro.sys.sdcardfs=true

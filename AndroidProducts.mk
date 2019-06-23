@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_j7xelte.mk
+    $(LOCAL_DIR)/havoc_on7xelte.mk
